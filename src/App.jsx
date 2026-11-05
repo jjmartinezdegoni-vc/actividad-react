@@ -3,11 +3,32 @@ import confetti from 'canvas-confetti';
 
 function App() {
   const lanzarConfeti = () => {
-    confetti({
-      particleCount: 200,
-      spread: 100,
-      origin: { y: 0.6 }
-    });
+   const duration = 5000;
+const animationEnd = Date.now() + duration;
+
+const defaults = {
+  startVelocity: 30,
+  spread: 360,
+  ticks: 200,
+  zIndex: 100
+};
+
+const interval = setInterval(() => {
+  const timeLeft = animationEnd - Date.now();
+
+  if (timeLeft <= 0) {
+    return clearInterval(interval);
+  }
+
+  confetti({
+    ...defaults,
+    particleCount: 50,
+    origin: {
+      x: Math.random(),
+      y: Math.random() - 0.2
+    }
+  });
+}, 250);
   };
 
   return (

@@ -1,16 +1,63 @@
-# React + Vite
+ Proyecto react: Efectos visuales con librerias javascript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Descripción del proyecto
 
-Currently, two official plugins are available:
+Este proyecto se ha desarrollado utilizando React y Vite, el objetivo principal es poder experimentar con diferentes librerias para crear efectos visuales interactivos en una aplicacion web
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Se han creado tres ramas de Git, cada una dedicada a una tecnología diferente
 
-## React Compiler
+2. Librerias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+react confetti
 
-## Expanding the ESLint configuration
+Libreria que permite generar animaciones de confeti mediante componentes de React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+canvas confetti
+
+Libreria que permite lanzar partículas de confeti utilizando HTML Canvas y JavaScript
+
+three.js
+
+Libreria JavaScript que permite crear y representar gráficos y escenas 3D en el navegador
+
+En este proyecto se ha utilizado para mostrar una escena 3D de un personaje tomando café en el espacio, junto a la Tierra y el Sol
+
+3. Organizacion con Git
+
+Se han creado las siguientes ramas:
+
+- "main": rama principal del proyecto.
+- "react-confetti": implementacion del efecto con react confetti
+- "canvas-confetti": implementacion del efecto con canvas confetti
+- "three": implementación de la escena 3d con three.js
+
+Posteriormente, se han fusionado en main las ramas three y canvas-confetti
+
+4. Capturas de pantalla
+
+React Confetti
+(./capturas/Screenshot%202026-11-05%20at%2022-51-19%20actividad-react.png)
+
+Canvas Confetti
+(./capturas/Screenshot%202026-11-05%20at%2023-02-20%20actividad-react.png)
+
+Three.js
+(./capturas/Screenshot%202026-11-05%20at%2023-07-45%20actividad-react.png)
+
+5. Instalación y ejecucion
+
+Para instalar las dependencias:
+
+npm install
+
+Para iniciar el servidor de desarrollo:
+
+npm run dev
+
+Para generar la versión de produccion:
+
+npm run build
+
+6. Conclusion
+
+Esta practica me ha ayudado a aprender a trabajat con react, usar diferentes librerias de javascript y utilizar git y gitHub para organizar y compartir el codigo usando las ramas y las fusiones
